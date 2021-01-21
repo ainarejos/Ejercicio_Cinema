@@ -14,4 +14,8 @@ class Pelicula {
     public String getTitulo() {
         return titulo;
     }
+    public int getEdad_minima() {
+        return edad_minima;
+    }
+
 }
