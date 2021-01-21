@@ -8,8 +8,17 @@ public class Asientos {
             disponibilidad=false;
         }
     }
+    public boolean Lleno(){
+        for (int i = 0; i < butacas.length ; i++) {
+            if (disponibilidad==true){
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
 
-    public void acuparAsiento(int posicion){
+    public void ocuparAsiento(int posicion){
         if (butacas[posicion]==0){
             butacas[posicion]=1;
         }
