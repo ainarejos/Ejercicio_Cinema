@@ -4,23 +4,6 @@ public class Test {
         Cine Ocimax = new Cine(Endgame, 8);
         Espectador tofol = new Espectador();
         Asientos butacas= new Asientos();
-        while (){
-            int i=(int)(Math.random()*72);
-            tofol=new Espectador();
-            butacas.comprovarButaca(i);
-            System.out.println(tofol.getEdad() + " " + tofol.getDinero());
-            if ((tofol.getEdad()>=Endgame.getEdad_minima())&&(tofol.getDinero()>=Ocimax.getPrecio()&&(butacas.getDisponibilidad()))){
-                butacas.ocuparAsiento(i);
-            }
-            for (int j = 0; j <butacas.getButacas().length ; j++) {
-                System.out.println(butacas.getButacas()[j]);
-            }
+        butacas.ocuparAsiento(tofol, butacas, Endgame, Ocimax);
         }
-        //butacas.acuparAsiento(0);
-
-        }
-        //Comprobador
-
-
     }
-}
