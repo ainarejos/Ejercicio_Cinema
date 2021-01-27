@@ -39,6 +39,7 @@ public class Asientos {
         for (int j = 0; j <asientos.getButacas().length ; j++) {
             System.out.println(asientos.getButacas()[j]);
         }
+        System.out.println(tEnd);
     }
     public int[] getButacas() {
         return butacas;
